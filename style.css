@@ -362,7 +362,7 @@ article .icon {
 
 .project-img {
 	border-radius: 2rem;
-	width: 90%;
+	width: 70%;
 	height: 90%;
 }
 
@@ -397,23 +397,50 @@ article .icon {
 }
 
 .contact-info-container {
+	min-height: auto;
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+	padding: 75px;
 	justify-content: center;
-	gap: 0.5rem;
-	margin: 1rem;
+	align-items: center;
 }
 
-.contact-info-container p {
-	font-size: larger;
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	max-width: 450px;
+	width: 100%;
+	margin: 0 auto;
 }
 
-.contact-icon {
-	cursor: default;
+input,
+textarea {
+	width: 100%;
+	background: transparent;
+	padding: 18px;
+	outline: none;
 }
 
-.email-icon {
-	height: 2.5rem;
+input:focus,
+textarea:focus {
+	outline: none;
+	border-color: blue;
+}
+
+.contact-button {
+	justify-content: center;
+	padding: 14px 35px;
+	background-color: rgb(35, 35, 234);
+	color: white;
+	cursor: pointer;
+}
+
+input,
+textarea,
+.contact-button {
+	border-radius: 9px;
+	border: 1px solid gray;
 }
 
 /* FOOTER SECTION */
